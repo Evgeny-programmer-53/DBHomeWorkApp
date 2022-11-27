@@ -1,6 +1,7 @@
 package evgeny.company.dbhomeworkapp.firstscreen
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import com.google.android.material.textfield.TextInputEditText
 import evgeny.company.dbhomeworkapp.App
 import evgeny.company.dbhomeworkapp.R
 import evgeny.company.dbhomeworkapp.Router
+import evgeny.company.dbhomeworkapp.breseryscreen.BreweryActivity
 import evgeny.company.dbhomeworkapp.db.Beer
 
 class FirstScreen : Fragment() {
@@ -45,6 +47,11 @@ class FirstScreen : Fragment() {
 
         view.findViewById<Button>(R.id.openSecondScreenButton).setOnClickListener {
             router?.openSecondScreen()
+        }
+
+        view.findViewById<Button>(R.id.openBreweryScreenButton).setOnClickListener {
+            val intent = Intent(context, BreweryActivity::class.java)
+            startActivity(intent)
         }
     }
 

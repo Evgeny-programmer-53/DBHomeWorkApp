@@ -5,4 +5,7 @@
     <string name="open_second_screen_button">Открыть второй экран</string>
     <string name="saved_beer_list_title">Список сохранненных сортов пива</string>
     <string name="clear_db_button_title">Очистить базу</string>
+    <string name="brewery_type_title">Тип пивоварни</string>
+    <string name="brewery_screen_title">Список пивоварен</string>
+    <string name="open_brewery_screen_button">Открыть экран со списком пивоварен</string>
 </resources>
